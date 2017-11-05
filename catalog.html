@@ -1,12 +1,177 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Глейси</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
+<head>
+  <meta charset="UTF-8">
+  <title>Магазин мороженного "Глейси"</title>
+</head>
 
-  </body>
+<body>
+	<header>
+		<nav class="main-navigation">
+			<span> class="main-header-logo">
+				<img src="http://placehold.it/150x100" alt="Магазин мороженного «Глейси»">
+			</span>
+			<ul class="site-navigation">
+				<li><a href="catalog.html">Каталог</a></li>
+				<li><a href="shipping-and-payment.html">Доставка и оплата</a></li>
+				<li><a href="info.html">О Компании</a></li>
+			</ul>
+		</nav>
+		<div class="timetable">
+            <p class="contact-phone">8 812 450-25-25</p>
+        </div>
+	</header>
+
+	<main>
+		<nav>
+			<a href="index.html">Главная</a>
+			<a href="catalog.html">Каталог</a>
+			<span>Сливочное</span>
+		</nav>
+		<h1>Сливочное мороженное</h1>
+		<section class="filters">
+			<ul class="filter-title">
+				<li>
+					<h2>Сортировка</h2>
+					<span class="chose-button">по популярности</span>
+				</li>
+				<li>
+					<h2>Цена: 100 руб. - 500 руб.</h2>
+					<span class="value-button-low"></span>
+					<span class="value-button-high"></span>
+				</li>
+				<li>
+					<h2>Жирность</h2>
+					<span class="0%">0%</span>
+					<span class="10%">10%</span>
+					<span class="below-30%">до 30%</span>
+					<span class="over-30%">выше 30%</span>
+				</li>
+				<li>
+					<h2>Наполнители</h2>
+					<span class="chocolate">шоколадные</span>
+					<span class="sugar">сахарные присыпки</span>
+					<span class="fruit">фрукты</span>
+					<span class="syrup">сиропы</span>
+					<span class="jam">джемы</span>
+					<a href="#" class="accept-button">Применить</a>
+				</li>
+			</ul>
+		</section>
+		<section class="catalog">
+			<ul class="ice-cream">
+        		<li class="ice-cream-orange">
+        			<span class="ice-cream-price">310 руб/<small>кг</small></span>
+        			<h2><a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></h2>
+        			<img src="http://placehold.it/150x100" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+        		</li>
+        		<li class="ice-cream-chocolate">
+        			<span class="ice-cream-price">380 руб/<small>кг</small></span>
+        			<h2><a href="#">Сливочно-кофейное с кусочками шоколада</a></h2>
+        			<img src="http://placehold.it/150x100" alt="Сливочно-кофейное с кусочками шоколада">
+        		</li>
+        		<li class="ice-cream-strawberry">
+        			<span class="ice-cream-price">355 руб/<small>кг</small></span>
+        			<h2><a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></h2>
+        			<img src="http://placehold.it/150x100" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+        		</li>
+        		<li class="ice-cream-brulee">
+        			<span class="ice-cream-price">415 руб/<small>кг</small></span>
+        			<h2><a href="#">Сливочное крем-брюле с карамельной подливкой</a></h2>
+        			<img src="http://placehold.it/150x100" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+        		</li>
+        		<li class="ice-cream-lingonberry">
+        			<span class="ice-cream-price">325 руб/<small>кг</small></span>
+        			<h2><a href="#">Сливочное с брусничным джемом</a></h2>
+        			<img src="http://placehold.it/150x100" alt="Сливочное с брусничным джемом">
+        		</li>
+        		<li class="ice-cream-blueberries">
+        			<span class="ice-cream-price">410 руб/<small>кг</small></span>
+        			<h2><a href="#">Сливочно-черничное с цельными ягодами черники</a></h2>
+        			<img src="http://placehold.it/150x100" alt="Сливочно-черничное с цельными ягодами черники ">
+        		</li>
+        		<li class="ice-cream-lemon">
+        			<span class="ice-cream-price">375 руб/<small>кг</small></span>
+        			<h2><a href="#">Сливочно-лимонное с карамельной присыпкой</a></h2>
+        			<img src="http://placehold.it/150x100" alt="Сливочно-лимонное с карамельной присыпкой">
+        		</li>
+        		<li class="ice-cream-choco">
+        			<span class="ice-cream-price">320 руб/<small>кг</small></span>
+        			<h2><a href="#">Сливочное с шоколадной стружкой</a></h2>
+        			<img src="http://placehold.it/150x100" alt="Сливочное с шоколадной стружкой">
+        		</li>
+        		<li class="ice-cream-vanila">
+        			<span class="ice-cream-price">440 руб/<small>кг</small></span>
+        			<h2><a href="#">Сливочно-ванильное с кусочками шоколада</a></h2>
+        			<img src="http://placehold.it/150x100" alt="Сливочно-ванильное с кусочками шоколада">
+        		</li>
+        		<li class="ice-cream-menthol">
+        			<span class="ice-cream-price">435 руб/<small>кг</small></span>
+        			<h2><a href="#">Сливочноe с ментоловым сиропом</a></h2>
+        			<img src="http://placehold.it/150x100" alt="Сливочноe с ментоловым сиропом">
+        		</li>
+        		<li class="ice-cream-menthol">
+        			<span class="ice-cream-blackchoco">355 руб/<small>кг</small></span>
+        			<h2><a href="#">Сливочное с кусочками черного шоколада</a></h2>
+        			<img src="http://placehold.it/150x100" alt="Сливочное с кусочками черного шоколада">
+        		</li>
+        		<li class="ice-cream-mint">
+        			<span class="ice-cream-price">420 руб/<small>кг</small></span>
+        			<h2><a href="#">Сливочное с мятным сиропом</a></h2>
+        			<img src="http://placehold.it/150x100" alt="Сливочное с мятным сиропом">
+        		</li>
+        	</ul>
+		</section>
+		<div class="-all-pages">
+			<ul class="page-number">
+				<li>
+					<a href="#">1</a>
+				</li>
+				<li>
+					<a href="#">2</a>
+				</li>
+				<li>
+					<a href="#">3</a>
+				</li>
+				<li>
+					<a href="#">4</a>
+				</li>
+				<li>
+					<a href="#">5</a>
+				</li>
+				<li>
+					<a href="#"></a>
+				</li>
+			</ul>			
+		</div>
+	</main>
+
+	<footer>
+		<div class="footer-social">
+			<ul>
+				<li><a class="social-button" href="#">Твиттер</a></li>
+				<li><a class="social-button" href="#">Инстаграм</a></li>
+				<li><a class="social-button" href="#">Фейсбук</a></li>
+				<li><a class="social-button" href="#">Вконтакте</a></li>
+			</ul>
+		</div>
+		<div class="footer-partner-info">
+			<ul>
+				<li><a class="partner-button" href="#">Для поставщиков</a></li>
+				<li><a class="partner-button" href="#">О производстве</a></li>
+				<li><a class="partner-button" href="#">Наши документы</a></li>
+				<li><a class="partner-button" href="#">Экологические стандарты</a></li>
+			</ul>
+		</div>
+		<div class="footer-copyright">
+			<a class="copyright-logo" href="https://htmlacademy.ru"><img src="http://placehold.it/150x100"></a>
+			<p class="copyright-info"> 
+			Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> © 2017
+			</p>
+		</div>
+	</footer>
+
+</body>
+
 </html>
