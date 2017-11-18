@@ -14,15 +14,66 @@
                 <img src="img/logo.svg" width="154" height="64" alt="Магазин мороженного «Глейси»">
             </span>
             <ul class="site-navigation">
-                <li><a href="catalog.html">Каталог</a></li>
-                <li><a href="shipping-and-payment.html">Доставка и оплата</a></li>
-                <li><a href="info.html">О Компании</a></li>
+                <li class="catalog">
+                    <a href="catalog.html">Каталог</a>
+                    <ul class="catalog-list">
+                        <li class="site-navigation-title"><strong>Новинки</strong><hr></li>
+                        <li class="site-navigation-product"><a href="catalog.html" class="product-link">Сливочное</a></li>
+                        <li class="site-navigation-product"><a href="#" class="product-link">Щербеты</a></li>
+                        <li class="site-navigation-product"><a href="#" class="product-link">Фруктовый лёд</a></li>
+                        <li class="site-navigation-product"><a href="#" class="product-link">Мелорин</a></li>
+                    </ul>
+                </li>
+                <li class="delivery-and-payment">
+                    <a href="delivery-and-payment.html">Доставка и оплата</a>
+                </li>
+                <li class="company-info">
+                    <a href="info.html">О Компании</a>
+                </li>
             </ul>
-            <ul class="user-navigation">
-                <li class="search"><a href="search.html"><img src="img/loupe.svg" width="17" height="17"> Поиск</a></li>
-                <li class="login-link"><a href="login-link.html"><img src="img/entrance.svg" width="21" height="19">Вход</a></li>
-                <li class="cart"><a href="cart.html"><img src="img/basket.svg" width="21" height="20">Пусто</a></li>
-            </ul>
+            <div class="user-navigation">
+                <div class="nav-search">
+                    <div class="nav-search-hide"></div>
+                        <form action="/echo" class="search-form">
+                            <div class="search-hide">
+                                <div class="field-hide">
+                                    <input class="nav-search-form" id="search" type="search" name="search" placeholder="Что ищем?" required>
+                                    <label class="nav-search-form" for="search"></label>
+                                </div>
+                            </div>
+                            <button class="button-search" type="submit">
+                                <img src="img/loupe.svg" width="17" height="17">
+                            </button>
+                        </form>
+                    </div>
+                <div class="nav-login">
+                    <div class="nav-login-button">
+                        <img src="img/entrance.svg" width="21" height="19">
+                    </div>
+                    <div class="login-hide">
+                        <form action="/echo" class="login=form">
+                            <div class="field-hide">
+                                <input class="nav-login-form" type="text" id="login-email" placeholder="Электронная почта" required>
+                                <label class="nav-login-form" for="login-email"></label>
+                            </div>
+                            <div class="field-hide">
+                                <input class="nav-login-form" type="password" id="login-password" placeholder="Пароль" required >
+                                <label class="nav-login-forml" for="login-password"></label>
+                            </div>
+                            <div class="login-button-hide">
+                                <button type="submit" class="button-hide">Войти</button>
+                            </div>
+                            <div class="login-support">
+                                <a href="#" class="link">Забыли пароль?</a>
+                                <a href="#" class="link">Новая регистрация</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="nav-cart">
+                    <button type="submit" class="cart"><img src="img/basket.svg" width="21" height="20">Пусто</button>
+                </div>
+            </div>
         </nav>
         <div class="timetable">
             <p class="work-time">С 10 до 20, ежедневно</p>
@@ -35,11 +86,16 @@
             <img src="img/big_ice1.png"  width="1045" height="881">
             <h2 class="slider-name">Крем-брюле и пломбир с малиновым джемом</h2>
                 <a href="#" class="buy-both">Давайте оба!</a>
-            <ul class="slider-button">
-               <li></li>
-               <li></li>
-               <li></li>
-            </ul>
+            <div class="slider-button">
+                <form form action="/echo" class="choose-product">
+                    <label class="slider-button-1" for="choose-1"></label>
+                    <input class="slider-button-1" id="choose-1" name="choose" type="radio" checked>
+                    <label class="slider-button-2" for="choose-2"></label>
+                    <input class="sloder-button-2" id="choose-2" name="choose" type="radio">
+                    <label class="slider-button-3" for="input-3"></label>
+                    <input class="slider-button-3" id="choose-3" name="choose" type="radio">
+                </form>
+            </div>
         </section>
         <section class="special-offer">
             <ul class="special-offer-list">
@@ -104,9 +160,15 @@
         <section class="spam">
             <img src="img/email.jpg" width="560" height="220">
             <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</p>
-            <span class="email">Электронная почта</span>
-            <a href="#" class="email-button">Форма отправить</a>
-
+            <form action="/echo" method="post">
+                <div class="button">
+                    <label type="email" name="spam-email" for="spam-email"></label>
+                    <input type="email" name="email" id="spam-email" placeholder="Электронная почта" > Электронная почта</input>
+                </div>
+                <div>
+                    <button type="submit" class="btn">Oтправить</button>
+                </div>
+            </form>
         </section>
         <section class="contacts">
             <img src="img/map.jpg" width="1200" height="640">
@@ -124,6 +186,27 @@
                 (с 10 до 20 ежедневно)
             </p>
             <a href="#" class="contact-button">Форма обратной связи</a>
+            <div class="support-hide">
+                <button class="support-close" type="button">Закрыть</button>
+                <p class="support-info">Мы обязательно вам ответим!</p>
+                <form class="support-hide-form" action="/echo" method="post">
+                    <div class="field">
+                        <input class="support-hide-field" type="text" name="name" id="contact-name" placeholder="Как вас зовут" required>
+                        <label class="support-hide-field" for="client"></label>
+                    </div>
+                    <div class="field">
+                        <input class="support-hide-field" type="text" name="email" id="contact-email" placeholder="Ваша почта для ответа?" required>
+                        <label class="support-hide-field" for="contact-email"></label>
+                    </div>
+                    <div class="field">
+                        <textarea class="support-hide-field" name="text" rows="6" id="input-text" placeholder="Напишите что-нибудь..." required></textarea>
+                        <label class="support-hide-field" for="input-text"></label>
+                    </div>
+                    <div class="support-hide-button">
+                        <button class="support-hide-button" type="submit" name="send">Отправить</button>
+                    </div>
+                </form>
+            </div>
         </section>
     </main>
 
