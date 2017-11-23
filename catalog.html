@@ -4,6 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <title>Сливочное мороженное «Глейси»</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
+
 </head>
 
 <body>
@@ -57,10 +61,10 @@
                             </div>
                             <div class="field-hide">
                                 <input class="nav-login-form" type="password" id="login-password" placeholder="Пароль" required >
-                                <label class="nav-login-forml" for="login-password"></label>
+                                <label class="nav-login-form" for="login-password"></label>
                             </div>
                             <div class="login-button-hide">
-                                <button type="submit" class="button-hide">Войти</button>
+                                <button type="submit" class="button-hide btn">Войти</button>
                             </div>
                             <div class="login-support">
                                 <a href="#" class="link">Забыли пароль?</a>
@@ -102,24 +106,25 @@
                             </tr>
                         </table>
                         <div class="cart-button-buy">
-                            <button type="submit" class="order-button">Оформить заказ</button>
+                            <button type="submit" class="order-button btn">Оформить заказ</button>
                         </div>
                     </div>
                 </div>
             </div>
         </nav>
         <div class="timetable">
+            <p class="work-time">С 10 до 20, ежедневно</p>
             <p class="contact-phone">8 812 450-25-25</p>
         </div>
     </header>
     
     <main>
-        <ul class="nav">
-            <li><a href="index.html">Главная</a></li>
-            <li><a href="catalog.html">Каталог</a></li>
-            <li>Сливочное</li>
-        </li>
-        <h1>Сливочное мороженное</h1>
+        <div class="breadcrumbs">
+            <a class="breadcrumbs-item" href="index.html">Главная</a>
+            <a class="breadcrumbs-item" href="catalog.html">Каталог</a>
+            <span class="breadcrumbs-item">Сливочное</span>
+        </div>
+        <h1 class="main-title">Сливочное мороженное</h1>
         <section class="filters">
             <form class="filters" action="/echo" method="get">
                 <fieldset class="filter-option">
@@ -177,11 +182,11 @@
                     </div>
                 </fieldset>
                 <div class="filter-button">
-                    <button class="filter-button-accept" type="submit">Применить</button>
+                    <button class="filter-button-accept btn" type="submit">Применить</button>
                 </div>
             </form>
         </section>
-        <section class="catalog">
+        <section class="product-catalog">
             <ul class="ice-cream">
                 <li class="ice-cream-title">
                     <img src="img/ice_cream1.jpg" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
@@ -198,7 +203,7 @@
                     <span class="ice-cream-price">355 <img src="img/ruble.svg" width="30" height="35">/<small>кг</small></span>
                     <h2><a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a></h2>
                     <div class="ice-cream-view">
-                        <a href="#" class="view-button">Быстрый просмотр</a>
+                        <a href="#" class="btn view-button">Быстрый просмотр</a>
                     </div>
                 </li>
                 <li class="ice-cream-title">
@@ -262,20 +267,16 @@
 
     <footer>
         <div class="footer-social">
-            <ul>
-                <li><a class="social-button" href="#"><img src="img/twitter.svg" width="32" height="32" >Твиттер</a></li>
-                <li><a class="social-button" href="#"><img src="img/instagram.svg" width="32" height="32" >Инстаграм</a></li>
-                <li><a class="social-button" href="#"><img src="img/fb.svg" width="32" height="32" >Фейсбук</a></li>
-                <li><a class="social-button" href="#"><img src="img/vk.svg" width="32" height="32" >Вконтакте</a></li>
-            </ul>
+            <a class="social-button" href="#"><img src="img/twitter.svg" width="32" height="32" >Твиттер</a>
+            <a class="social-button" href="#"><img src="img/instagram.svg" width="32" height="32" >Инстаграм</a>
+            <a class="social-button" href="#"><img src="img/fb.svg" width="32" height="32" >Фейсбук</a>
+            <a class="social-button" href="#"><img src="img/vk.svg" width="32" height="32" >Вконтакте</a>
         </div>
         <div class="footer-partner-info">
-            <ul>
-                <li><a class="partner-button" href="#"><img src="img/heart.svg"  width="15" height="13" >Для поставщиков</a></li>
-                <li><a class="partner-button" href="#">О производстве</a></li>
-                <li><a class="partner-button" href="#">Наши документы</a></li>
-                <li><a class="partner-button" href="#">Экологические стандарты</a></li>
-            </ul>
+            <a class="partner-button" href="#"><img src="img/heart.svg"  width="15" height="13" >Для поставщиков</a>
+            <a class="partner-button" href="#">О производстве</a>
+            <a class="partner-button" href="#">Наши документы</a>
+            <a class="partner-button" href="#">Экологические стандарты</a>
         </div>
         <div class="footer-copyright">
             <a class="copyright-logo" href="https://htmlacademy.ru"><img src="img/logo-htmlacademy.svg" width="108" height="39"></a>

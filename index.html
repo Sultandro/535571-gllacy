@@ -4,6 +4,10 @@
 <head>
   <meta charset="UTF-8">
   <title>Магазин мороженного «Глейси»</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic" rel="stylesheet">
+
 </head>
 
 <body>
@@ -58,10 +62,10 @@
                             </div>
                             <div class="field-hide">
                                 <input class="nav-login-form" type="password" id="login-password" placeholder="Пароль" required >
-                                <label class="nav-login-forml" for="login-password"></label>
+                                <label class="nav-login-form" for="login-password"></label>
                             </div>
                             <div class="login-button-hide">
-                                <button type="submit" class="button-hide">Войти</button>
+                                <button type="submit" class="btn button-hide">Войти</button>
                             </div>
                             <div class="login-support">
                                 <a href="#" class="link">Забыли пароль?</a>
@@ -98,22 +102,28 @@
             </div>
         </section>
         <section class="special-offer">
-            <ul class="special-offer-list">
-                <li class="special-offer-item">
+            <section class="special-offer-item">
+                <div class="special-offer-rasp">
                     <img src="img/raspberries.jpg" width="787" height="410">
                     <h2 class="offer-raspberry">Малинка даром!</h2>
                         <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-                        <a href="#" class="button-buy">Хочу варенье!</a>
-                </li>
-                <li class="special-offer-item">
+                </div>
+                <div>
+                    <a href="#" class="btn button-buy">Хочу варенье!</a>
+                </div>
+            </section>
+            <section class="special-offer-item">
+                <div class="special-offer-choco">
                     <img src="img/chocolate.jpg" width="830" height="450">
                     <h2 class="offer-chocolate">Шоколадки даром!</h2>
                         <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-                        <a href="#" class="button-buy">Хочу шоколадки!</a>
-                </li>
-            </ul>
+                </div>
+                <div>
+                    <a href="#" class="btn button-buy">Хочу шоколадки!</a>
+                </div>
+            </section>
         </section>
-        <section class="catalog">
+        <section class="product-catalog">
             <ul class="ice-cream">
                 <li class="ice-cream-title">
                     <img src="img/hit.svg" width="61" height="61">
@@ -160,18 +170,18 @@
         <section>
             <h3>Новое в нашем блоге</h3>
             <img src="img/strawberry.jpg"  width="866" height="790">
-            <p><a href="#">10 способов сервировки фруктовых щербетов к столу</a></p>
+            <p><a class="blog" href="#">10 способов сервировки фруктовых щербетов к столу</a></p>
         </section>
         <section class="spam">
             <img src="img/email.jpg" width="560" height="220">
             <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</p>
             <form action="/echo" method="post">
-                <div class="button">
+                <div class="spam-button">
                     <label type="email" name="spam-email" for="spam-email"></label>
                     <input type="email" name="email" id="spam-email" placeholder="Электронная почта" > Электронная почта</input>
                 </div>
                 <div>
-                    <button type="submit" class="btn">Oтправить</button>
+                    <button type="submit" class="btn email-button">Oтправить</button>
                 </div>
             </form>
         </section>
@@ -181,18 +191,19 @@
             <p class="info-adress">
                 Адрес главного офиса и офлайн-магазина:
                 <br>
-                <strong>ул.Большая Конюшенная 19/8, Санкт-Петербург</strong>
+                <strong class="contact-info">ул.Большая Конюшенная 19/8, Санкт-Петербург</strong>
             </p>
+
             <p class="info-phone">
                 Для заказов по телефону:
                 <br>
-                <strong>8 812 450-25-25</strong>
+                <strong class="contact-info">8 812 450-25-25</strong>
                 <br>
                 (с 10 до 20 ежедневно)
             </p>
-            <button class="contact-button">Форма обратной связи</button>
+            <button class="btn contact-button">Форма обратной связи</button>
             <div class="support-hide">
-                <button class="support-close" type="button">Закрыть</button>
+                <button class="btn support-close" type="button">Закрыть</button>
                 <p class="support-info">Мы обязательно вам ответим!</p>
                 <form class="support-hide-form" action="/echo" method="post">
                     <div class="field">
@@ -208,7 +219,7 @@
                         <label class="support-hide-field" for="input-text"></label>
                     </div>
                     <div class="support-hide-button">
-                        <button class="support-hide-button" type="submit" name="send">Отправить</button>
+                        <button class="btn support-hide-button" type="submit" name="send">Отправить</button>
                     </div>
                 </form>
             </div>
@@ -217,23 +228,19 @@
 
     <footer>
         <div class="footer-social">
-            <ul>
-                <li><a class="social-button" href="#"><img src="img/twitter.svg" width="32" height="32">Твиттер</a></li>
-                <li><a class="social-button" href="#"><img src="img/instagram.svg" width="32" height="32">Инстаграм</a></li>
-                <li><a class="social-button" href="#"><img src="img/fb.svg" width="32" height="32">Фейсбук</a></li>
-                <li><a class="social-button" href="#"><img src="img/vk.svg" width="32" height="32">Вконтакте</a></li>
-            </ul>
+            <a class="social-button" href="#"><img src="img/twitter.svg" width="32" height="32" >Твиттер</a>
+            <a class="social-button" href="#"><img src="img/instagram.svg" width="32" height="32" >Инстаграм</a>
+            <a class="social-button" href="#"><img src="img/fb.svg" width="32" height="32" >Фейсбук</a>
+            <a class="social-button" href="#"><img src="img/vk.svg" width="32" height="32" >Вконтакте</a>
         </div>
         <div class="footer-partner-info">
-            <ul>
-                <li><a class="partner-button" href="#"><img src="img/heart.svg" width="15" height="13">Для поставщиков</a></li>
-                <li><a class="partner-button" href="#">О производстве</a></li>
-                <li><a class="partner-button" href="#">Наши документы</a></li>
-                <li><a class="partner-button" href="#">Экологические стандарты</a></li>
-            </ul>
+            <a class="partner-button" href="#"><img src="img/heart.svg"  width="15" height="13" >Для поставщиков</a>
+            <a class="partner-button" href="#">О производстве</a>
+            <a class="partner-button" href="#">Наши документы</a>
+            <a class="partner-button" href="#">Экологические стандарты</a>
         </div>
         <div class="footer-copyright">
-            <a class="copyright-logo" href="https://htmlacademy.ru"><img src="img/logo-htmlacademy.svg" width="100" height="50"></a>
+            <a class="copyright-logo" href="https://htmlacademy.ru"><img src="img/logo-htmlacademy.svg" width="108" height="39"></a>
             <p class="copyright-info"> 
             Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> © 2017
             </p>

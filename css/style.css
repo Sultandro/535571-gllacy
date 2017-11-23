@@ -1,0 +1,179 @@
+body {
+  min-width: 900px;
+  font: 400 16px/22px "Roboto", "Arial", sans-serif;
+  color: #323232;
+  background-color: #849d8f;
+}
+
+a {
+	color: #ffffff;
+}
+
+.site-navigation {
+
+	font-size: 16px;
+	line-height: 18px;
+	color: #ffffff;
+}
+
+.site-navigation-title {	
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 16px;
+	color: #323232;
+}
+
+ .user-navigation {
+ 	font-size: 14px;
+ 	line-height: 16px;
+ }
+
+.nav-search-form {
+ 	font-size: 14px;
+ 	line-height: 24px;
+}
+
+ .nav-login-form {
+ 	font-size: 14px;
+ 	line-height: 24px;
+ }
+
+.product-link {
+	font-size: 14px;
+	line-height: 16px;
+	color: #323232;
+}
+
+.product-catalog {
+	color: #ffffff;
+}
+
+.timetable {
+	right: 0;
+	color: #ffffff;
+	text-align: right;
+}
+
+.work-time {
+	font-size: 14px;
+	font-weight: 700;
+}
+
+.contact-phone {
+	font-size: 22px;
+  	font-weight: 700;
+}
+
+.slider-name {
+	 width: 700px;
+	 margin: 0 auto 32px;
+	 font: 700 60px/60.35px "Roboto", "Arial", sans-serif;
+	 color: #ffffff;
+}
+
+.main-title {
+	font-size: 35px;
+	line-height: 41px;
+	color: #ffffff;
+}
+
+.buy-both {
+	font-size: 32px;
+	line-height: 44px;
+}
+
+.btn {
+	font-size: 18px;
+	line-height: 24px;
+	color: #ffffff;
+}
+
+.special-offer-item {
+	font-size: 18px;
+	line-height: 22px;
+	color: #ffffff;
+}
+
+.offer-raspberry, .offer-chocolate {
+	font-size: 35px;
+	line-height: 41px;
+}
+
+.blog {
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 30px;
+	color: #323232;
+
+}
+
+.footer-partner-info {
+	font-size: 13px;
+	line-height: 16px;
+}
+
+.footer-copyright {
+	font-size: 12px;
+	line-height: 16px;
+	color: #ffffff;
+}
+
+.contacts {
+	font-size: 14px;
+	line-height: 20px;
+	color: #323232;
+}
+.contact-info {
+ 	font-size: 18px;
+ 	line-height: 24px;
+ 	font-weight: 700;
+}
+
+.support-info {
+	font-size: 24px;
+ 	line-height: 28px;
+ 	color: #323232;
+}
+
+.link {
+	font-size: 13px;
+ 	line-height: 24px;
+ 	color: #323232;
+}
+
+.cart-list-product {
+	font-size: 13px;
+ 	line-height: 16px;
+ 	color: #323232;
+}
+
+.cart-list-all {
+	font-size: 15px;
+	font-weight: 700;
+ 	line-height: 18px;
+ 	color: #323232;
+}
+
+.filter-option-title {
+	font-size: 14px;
+ 	line-height: 16px;
+ 	color: #ffffff;
+}
+
+.breadcrumbs-item {
+	font-size: 14px;
+ 	line-height: 16px;
+ 	font-weight: thin;
+}
+
+.filter-option {
+	font-size: 16px;
+ 	line-height: 18px;
+ 	color: #ffffff
+}
+
+.filter-сheckbox {
+	font-size: 16px;
+ 	line-height: 18px;
+ 	color: #ffffff
+ }
